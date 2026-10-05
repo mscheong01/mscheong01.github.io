@@ -112,6 +112,15 @@ main { overflow: hidden; }
 
 .section { max-width: var(--max); margin: 0 auto; padding: 112px 28px; display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 56px; border-top: 1px solid var(--line); }
 .section-label { color: var(--faint); font-size: .73rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+.recent-news { padding-top: 48px; padding-bottom: 48px; }
+.news-list { border-top: 1px solid var(--line); }
+.news-item { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; padding: 19px 0; border-bottom: 1px solid var(--line); }
+.news-meta { display: flex; align-items: baseline; gap: 12px; color: var(--faint); font: 650 .7rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
+.news-meta span { color: var(--accent); font-weight: 760; }
+.news-item p { margin: 0; color: var(--muted); line-height: 1.55; }
+.news-item strong { color: var(--ink); }
+.news-item a { color: var(--ink); text-decoration-color: color-mix(in srgb, var(--accent) 55%, transparent); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.news-item a:hover { color: var(--accent); }
 .split-intro { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); gap: 60px; align-items: start; }
 .split-intro h2 { max-width: 720px; margin: 0; font-size: clamp(2.3rem, 5.2vw, 4.5rem); line-height: 1.02; letter-spacing: -.06em; }
 .split-intro p { margin: 6px 0 0; color: var(--muted); }
@@ -196,6 +205,8 @@ main { overflow: hidden; }
   .hero { min-height: auto; grid-template-columns: 1fr; padding-inline: 20px; padding-top: 72px; }
   .portrait { width: min(100%, 360px); justify-self: start; }
   .section { padding: 82px 20px; grid-template-columns: 1fr; gap: 28px; }
+  .recent-news { padding-top: 42px; padding-bottom: 42px; }
+  .news-item { grid-template-columns: 1fr; gap: 8px; }
   .split-intro { grid-template-columns: 1fr; gap: 24px; }
   .section-heading-row, .profile-grid { grid-template-columns: 1fr; gap: 24px; }
   .timeline-item { grid-template-columns: 1fr; gap: 10px; }
