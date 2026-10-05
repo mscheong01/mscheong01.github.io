@@ -121,9 +121,9 @@ main { overflow: hidden; }
 .news-item strong { color: var(--ink); }
 .news-item a { color: var(--ink); text-decoration-color: color-mix(in srgb, var(--accent) 55%, transparent); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
 .news-item a:hover { color: var(--accent); }
-.split-intro { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); gap: 60px; align-items: start; }
-.split-intro h2 { max-width: 720px; margin: 0; font-size: clamp(2.3rem, 5.2vw, 4.5rem); line-height: 1.02; letter-spacing: -.06em; }
-.split-intro p { margin: 6px 0 0; color: var(--muted); }
+.split-intro { display: grid; grid-template-columns: 1fr; gap: 30px; align-items: start; }
+.split-intro h2 { max-width: 900px; margin: 0; font-size: clamp(2.3rem, 5.2vw, 4.5rem); line-height: 1.02; letter-spacing: -.06em; text-wrap: balance; }
+.split-intro p { max-width: 780px; margin: 0; color: var(--muted); }
 
 .paper { position: relative; display: grid; grid-template-columns: 50px minmax(0, 1fr); gap: 22px; padding: 34px 0; border-top: 1px solid var(--line); }
 .paper:last-child { border-bottom: 1px solid var(--line); }
