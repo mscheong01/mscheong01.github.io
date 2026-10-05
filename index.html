@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f7f9fc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#07111f" media="(prefers-color-scheme: dark)" />
+    <meta
+      name="description"
+      content="Minsoo Cheong is an integrated M.S./Ph.D. student at Seoul National University working on efficient machine learning systems and language model inference."
+    />
+    <meta property="og:title" content="Minsoo Cheong · Efficient ML Systems" />
+    <meta
+      property="og:description"
+      content="Research on efficient language model inference, KV-cache optimization, and diffusion language models."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mscheong01.github.io/" />
+    <title>Minsoo Cheong · Efficient ML Systems</title>
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="canonical" href="https://mscheong01.github.io/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Minsoo Cheong, home">
+        <span class="brand-mark" aria-hidden="true">MC</span>
+        <span class="brand-name">Minsoo Cheong</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+        </button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav">
+          <span class="sr-only">Open navigation</span>
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#open-source">Open source</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1 id="hero-title">Minsoo Cheong</h1>
+          <p class="hero-lede">
+            I’m an integrated M.S./Ph.D. student at Seoul National University, working on efficient machine learning systems.
+          </p>
+          <p class="hero-intro">
+            My research focuses on language model inference, KV-cache optimization, diffusion language models, and low-bit quantization. I am advised by Prof. Sungjoo Yoo at <a href="https://cmalab.snu.ac.kr/">CMALab</a>.
+          </p>
+          <div class="hero-cta">
+            <a class="button button-primary" href="assets/Minsoo_Cheong_CV.pdf">View CV</a>
+            <a class="button button-quiet" href="https://scholar.google.com/citations?user=WEMHVCUAAAAJ">Google Scholar</a>
+          </div>
+          <div class="hero-links" aria-label="Contact and profiles">
+            <a href="mailto:icycle0409@snu.ac.kr">Email</a>
+            <a href="https://github.com/mscheong01">GitHub</a>
+            <a href="https://kr.linkedin.com/in/minsoo-cheong-606314206">LinkedIn</a>
+          </div>
+        </div>
+
+        <figure class="portrait reveal">
+          <img
+            class="profile-photo"
+            src="assets/minsoo-cheong.jpg"
+            alt="Minsoo Cheong"
+            width="960"
+            height="1200"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </figure>
+      </section>
+
+      <section class="section research-intro" id="research" aria-labelledby="research-title">
+        <div class="section-label">Research</div>
+        <div class="section-body split-intro reveal">
+          <h2 id="research-title">Efficient inference under real system constraints.</h2>
+          <p>
+            My work studies how generative models can reuse, compress, and recover intermediate state without sacrificing output quality. I am especially interested in KV caching, diffusion language models, and low-bit quantization.
+          </p>
+        </div>
+      </section>
+
+      <section class="section publications" id="publications" aria-labelledby="publications-title">
+        <div class="section-label">Selected publications</div>
+        <div class="section-body">
+          <h2 class="sr-only" id="publications-title">Selected publications</h2>
+          <article class="paper featured reveal">
+            <div class="paper-index">01</div>
+            <div class="paper-main">
+              <div class="paper-meta"><span class="status accepted">NeurIPS 2026</span><span>Poster</span></div>
+              <h3>EntropyCache: Decoded Token Entropy Guided KV Caching for Diffusion Language Models</h3>
+              <p class="authors"><strong>Minsoo Cheong</strong>, Donghyun Son, Woosang Lim, and Sungjoo Yoo</p>
+              <p class="paper-summary">Training-free KV caching for diffusion language models using decoded-token entropy as a constant-cost recomputation signal.</p>
+              <div class="paper-links">
+                <a href="https://arxiv.org/abs/2603.18489">Paper</a>
+                <a href="https://github.com/mscheong01/EntropyCache">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper reveal">
+            <div class="paper-index">02</div>
+            <div class="paper-main">
+              <div class="paper-meta"><span class="status preprint">Preprint</span><span>Equal contribution</span></div>
+              <h3>Tailoring the Quantization Space for 1-Bit KV Cache Compression</h3>
+              <p class="authors"><strong>Minsoo Cheong*</strong>, Donghyun Son*, and Sungjoo Yoo</p>
+              <p class="paper-summary">A tailored quantization space for compressing the KV cache to one bit.</p>
+              <div class="paper-links">
+                <a href="https://openreview.net/pdf?id=lWUM9JOGww">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper reveal">
+            <div class="paper-index">03</div>
+            <div class="paper-main">
+              <div class="paper-meta"><span class="status preprint">Preprint</span></div>
+              <h3>KV-Rescue: Recovering Reasoning Language Model KV Eviction Loss via Stepwise Interleaving</h3>
+              <p class="authors"><strong>Minsoo Cheong</strong>, Woosang Lim, Vincent-Daniel Yun, and Sungjoo Yoo</p>
+              <p class="paper-summary">Stepwise interleaving to recover reasoning-model performance lost through KV-cache eviction.</p>
+              <div class="paper-links">
+                <a href="https://arxiv.org/abs/2608.15797">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper reveal">
+            <div class="paper-index">04</div>
+            <div class="paper-main">
+              <div class="paper-meta"><span class="status preprint">Preprint</span></div>
+              <h3>Output-Aware Rotation for INT2 KV-Cache Quantization</h3>
+              <p class="authors">Vincent-Daniel Yun, Woosang Lim, <strong>Minsoo Cheong</strong>, Sunwoo Lee, Murali Annavaram, Sai Praneeth Karimireddy, and Sungjoo Yoo</p>
+              <p class="paper-summary">Output-aware rotations for two-bit KV-cache quantization.</p>
+              <div class="paper-links">
+                <a href="https://arxiv.org/abs/2608.02691">Paper</a>
+                <a href="https://github.com/daniel-eai/Output-Aware-INT2-KV-Cache-Quantization">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-label">Experience</div>
+        <div class="section-body">
+          <div class="section-heading-row reveal">
+            <h2 id="experience-title">Systems research, backed by production engineering.</h2>
+            <p>Experience across model inference, backend platforms, and open-source runtimes.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Jun — Aug 2024</div>
+              <div class="timeline-content">
+                <p class="timeline-org">NAVER Corporation</p>
+                <h3>Research Engineer Intern <span>LLM Solution Team</span></h3>
+                <p>Built a Kubeflow pipeline for automated LLM inference benchmarking across hardware, batching, sequence length, quantization, and speculative decoding. Implemented llama.cpp support for an internal language model.</p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Jun 2022 — Jun 2023</div>
+              <div class="timeline-content">
+                <p class="timeline-org">Mathpresso</p>
+                <h3>Backend Software Engineer <span>Content Platform Team</span></h3>
+                <p>Built Kotlin and Go content-production and distribution systems and gRPC APIs. Contributed to three release cycles of a digital school-exam product that achieved a 60-fold increase in sales.</p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">May 2021 — Jun 2022</div>
+              <div class="timeline-content">
+                <p class="timeline-org">Bucketplace</p>
+                <h3>Backend Software Engineer <span>Commerce Service Team</span></h3>
+                <p>Developed commerce backend services using Kotlin and Spring Boot, including bulk product management and microservice data aggregation.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section open-source" id="open-source" aria-labelledby="open-source-title">
+        <div class="section-label">Open source</div>
+        <div class="section-body">
+          <div class="section-heading-row reveal">
+            <h2 id="open-source-title">Ideas that run outside the paper.</h2>
+            <p>Selected work on LLM inference and Kotlin developer infrastructure.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-featured reveal">
+              <div class="project-top"><span class="project-type">Collaborator</span><span>Mar 2024 — Present</span></div>
+              <h3>llama.cpp</h3>
+              <p>Contributions to stochastic speculative decoding, the retrieval example, and EXAONE model support in the widely used C/C++ LLM inference runtime.</p>
+              <a href="https://github.com/ggerganov/llama.cpp/pulls?q=is%3Apr+author%3Amscheong01+">View contributions</a>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-top"><span class="project-type">Open source</span></div>
+              <h3>krotoDC</h3>
+              <p>A protoc plugin for Kotlin data classes and coroutine-friendly gRPC services and stubs.</p>
+              <div class="project-stats">
+                <a class="project-stat" href="https://github.com/mscheong01/krotoDC" aria-label="krotoDC stars on GitHub">
+                  <strong data-github-stars aria-live="polite">—</strong>
+                  <span>GitHub stars</span>
+                </a>
+                <a class="project-stat" href="https://central.sonatype.com/search?q=krotoDC" aria-label="krotoDC downloads on Maven Central">
+                  <strong>5,000+</strong>
+                  <span>monthly downloads</span>
+                </a>
+              </div>
+              <a href="https://github.com/mscheong01/krotoDC">View on GitHub</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section profile" id="profile" aria-labelledby="profile-title">
+        <div class="section-label">Background</div>
+        <div class="section-body profile-grid">
+          <div class="education-block reveal">
+            <h2 id="profile-title">Education</h2>
+            <article>
+              <div><strong>Seoul National University</strong><span>Sep 2025 — Present</span></div>
+              <p>Integrated M.S./Ph.D. in Computer Science and Engineering</p>
+              <small>Advisor: Prof. Sungjoo Yoo · Computing and Memory Architecture Laboratory</small>
+            </article>
+            <article>
+              <div><strong>Seoul National University</strong><span>Mar 2019 — Aug 2025</span></div>
+              <p>B.S. in Computer Science and Engineering, <em>Cum Laude</em></p>
+            </article>
+          </div>
+          <div class="activity-block reveal">
+            <h2>Talks &amp; service</h2>
+            <article>
+              <span>2026</span>
+              <p><strong>EntropyCache</strong> poster presentations at NeurIPS and the ICML AdaptFM Workshop; talk at the Samsung MX Research Project Exchange Seminar.</p>
+            </article>
+            <article>
+              <span>2026</span>
+              <p>Reviewer, NeurIPS Workshop on On-Device Intelligence: Foundation Models under Real-World Constraints.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner reveal">
+          <p class="eyebrow"><span></span> Contact</p>
+          <h2 id="contact-title">Let’s talk about<br /><em>efficient inference.</em></h2>
+          <a class="contact-email" href="mailto:icycle0409@snu.ac.kr">icycle0409@snu.ac.kr</a>
+          <div class="contact-links" aria-label="Profiles">
+            <a href="https://scholar.google.com/citations?user=WEMHVCUAAAAJ">Google Scholar</a>
+            <a href="https://kr.linkedin.com/in/minsoo-cheong-606314206">LinkedIn</a>
+            <a href="https://github.com/mscheong01">GitHub</a>
+            <a href="assets/Minsoo_Cheong_CV.pdf">CV</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Minsoo Cheong</span>
+      <span>Seoul, Republic of Korea</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
