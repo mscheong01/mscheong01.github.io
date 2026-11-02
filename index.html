@@ -98,6 +98,10 @@
           <h2 class="sr-only" id="news-title">Recent news</h2>
           <article class="news-item">
             <div class="news-meta"><time datetime="2026">2026</time><span>Preprint</span></div>
+            <p>Excited to share our new preprint, <a href="loopvq/"><strong>LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers</strong></a>! Looped language models keep a separate KV cache for every loop step, so we quantize it along the loop axis down to 0.5 and 0.25 bits per element. Check it out!</p>
+          </article>
+          <article class="news-item">
+            <div class="news-meta"><time datetime="2026">2026</time><span>Preprint</span></div>
             <p>Our new preprint, <a href="https://dhdroid.github.io/TaSQ/"><strong>Tailoring the Quantization Space for 1-Bit KV Cache Compression</strong></a>, is now public. It introduces a 1-bit KV-cache quantization method that works remarkably well. Check it out!</p>
           </article>
           <article class="news-item">
@@ -139,6 +143,22 @@
             <div class="paper-index">02</div>
             <div class="paper-main">
               <div class="paper-meta"><span class="status preprint">Preprint</span></div>
+              <h3>LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers</h3>
+              <p class="authors"><strong>Minsoo Cheong</strong> and Sungjoo Yoo</p>
+              <p class="paper-summary">Sub 1-bit KV cache quantization for looped transformers that shares vector codes across loop steps.</p>
+              <div class="paper-links">
+                <!-- arXiv is on hold; switch to https://arxiv.org/abs/XXXX.XXXXX once it is out -->
+                <a href="https://www.alphaxiv.org/abs/2611.loopvq-kv-cache-quantization">Paper</a>
+                <a href="https://github.com/mscheong01/LoopVQ">Code</a>
+                <a href="loopvq/">Project page</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper reveal">
+            <div class="paper-index">03</div>
+            <div class="paper-main">
+              <div class="paper-meta"><span class="status preprint">Preprint</span></div>
               <h3>Tailoring the Quantization Space for 1-Bit KV Cache Compression</h3>
               <p class="authors"><strong>Minsoo Cheong*</strong>, Donghyun Son*, and Sungjoo Yoo</p>
               <p class="paper-summary">A tailored quantization space for compressing the KV cache to one bit.</p>
@@ -151,7 +171,7 @@
           </article>
 
           <article class="paper reveal">
-            <div class="paper-index">03</div>
+            <div class="paper-index">04</div>
             <div class="paper-main">
               <div class="paper-meta"><span class="status preprint">Preprint</span></div>
               <h3>KV-Rescue: Recovering Reasoning Language Model KV Eviction Loss via Stepwise Interleaving</h3>
@@ -164,7 +184,7 @@
           </article>
 
           <article class="paper reveal">
-            <div class="paper-index">04</div>
+            <div class="paper-index">05</div>
             <div class="paper-main">
               <div class="paper-meta"><span class="status preprint">Preprint</span></div>
               <h3>Output-Aware Rotation for INT2 KV-Cache Quantization</h3>
